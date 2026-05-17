@@ -1,0 +1,73 @@
+[
+  {
+    "evidence": {
+      "subdomain": "admin.example.test"
+    },
+    "kind": "surface.sensitive_subdomain",
+    "severity": "medium",
+    "summary": "Sensitive environment subdomain is exposed."
+  },
+  {
+    "evidence": {
+      "subdomain": "dev.example.test"
+    },
+    "kind": "surface.sensitive_subdomain",
+    "severity": "medium",
+    "summary": "Sensitive environment subdomain is exposed."
+  },
+  {
+    "evidence": {
+      "open": true,
+      "port": 22
+    },
+    "kind": "surface.risky_open_port",
+    "severity": "medium",
+    "summary": "SSH port is exposed."
+  },
+  {
+    "evidence": {
+      "open": true,
+      "port": 9200
+    },
+    "kind": "surface.risky_open_port",
+    "severity": "high",
+    "summary": "Elasticsearch port is exposed."
+  },
+  {
+    "evidence": {
+      "days_remaining": 3,
+      "expires_on": "2026-05-20"
+    },
+    "kind": "ssl.expiry",
+    "severity": "high",
+    "summary": "SSL certificate expires soon."
+  },
+  {
+    "evidence": {
+      "path": "/admin"
+    },
+    "kind": "surface.exposed_admin_path",
+    "severity": "high",
+    "summary": "Admin-style path appears exposed."
+  },
+  {
+    "evidence": {
+      "path": "/dashboard"
+    },
+    "kind": "surface.exposed_admin_path",
+    "severity": "high",
+    "summary": "Admin-style path appears exposed."
+  },
+  {
+    "evidence": {},
+    "kind": "headers.csp_missing",
+    "severity": "medium",
+    "summary": "CSP header is missing."
+  },
+  {
+    "evidence": {},
+    "kind": "headers.hsts_missing",
+    "severity": "medium",
+    "summary": "HSTS header is missing."
+  }
+]

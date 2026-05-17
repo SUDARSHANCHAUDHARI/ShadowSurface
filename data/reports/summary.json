@@ -1,0 +1,13 @@
+{
+  "by_severity": {
+    "high": 4,
+    "medium": 5
+  },
+  "domain": "example.test",
+  "findings": 9,
+  "risk_score": 100,
+  "schedule": {
+    "interval_hours": 24,
+    "mode": "recurring"
+  }
+}

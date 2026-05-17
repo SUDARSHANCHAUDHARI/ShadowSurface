@@ -1,0 +1,21 @@
+{
+  "domain": "example.test",
+  "headers": {
+    "Server": "nginx"
+  },
+  "paths": ["/", "/admin", "/dashboard"],
+  "ports": [
+    {
+      "open": true,
+      "port": 22
+    },
+    {
+      "open": true,
+      "port": 9200
+    }
+  ],
+  "ssl": {
+    "expires_on": "2026-05-20"
+  },
+  "subdomains": ["www.example.test", "admin.example.test", "dev.example.test"]
+}

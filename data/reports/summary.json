@@ -1,13 +1,29 @@
 {
+  "by_category": {
+    "headers": 2,
+    "ssl": 1,
+    "surface": 6
+  },
   "by_severity": {
     "high": 4,
     "medium": 5
   },
   "domain": "example.test",
   "findings": 9,
+  "risk_level": "high",
   "risk_score": 100,
   "schedule": {
     "interval_hours": 24,
     "mode": "recurring"
+  },
+  "top_priority": {
+    "evidence": {
+      "days_remaining": 1,
+      "expires_on": "2026-05-20"
+    },
+    "kind": "ssl.expiry",
+    "recommended_action": "Renew and deploy the certificate before expiry.",
+    "severity": "high",
+    "summary": "SSL certificate expires soon."
   }
 }

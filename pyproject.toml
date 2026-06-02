@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name = "shadowsurface"
+version = "1.0.0"
+description = "Attack surface monitoring MVP for domains, SSL, ports, exposed admin paths, and subdomain risks"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+
+[project.scripts]
+shadow-surface = "apps.api.app.cli:main"

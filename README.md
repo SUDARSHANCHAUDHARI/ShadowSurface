@@ -36,6 +36,19 @@ FastAPI, React, scheduled workers, Docker.
 
 Working CLI MVP.
 
+
+## Install
+
+```bash
+pip install .
+```
+
+This registers the `shadow-surface` command. Or run directly:
+
+```bash
+python3 main.py --help
+```
+
 ## Quick Start
 
 Analyze the included domain scan fixture:
